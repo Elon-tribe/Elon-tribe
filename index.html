@@ -17,7 +17,7 @@
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1.5rem;
       text-align: center;
     }
 
@@ -27,11 +27,7 @@
       display: block;
       margin: 0 auto 1rem auto;
     }
-/* 📱 Mobile optimization */
-@media (max-width: 600px) {
-  .logo-img {
-    max-width: 90px;  /* smaller logo on phones */
-  }
+
     h1 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -79,20 +75,33 @@
       background: #000;
       border-top: 1px solid #222;
     }
+    /* 📱 Mobile optimization */
+@media (max-width: 600px) {
+  .logo-img {
+    max-width: 90px;  /* smaller logo on phones */
+  }
+  h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
   </style>
 </head>
 <body>
-  <heade> 
+  <header> 
   <div class="container">
     <!-- Logo -->
     <div class="logo">
-      <img src="IMG_0845.png" alt="Elon Tribe Logo">
+      <img src="IMG_0845.png" alt="Elon Tribe Logo" class="logo-img">
     </div>
 
     <!-- Title -->
     <h1>THIS IS ELON TRIBE</h1>
-</heade>
-  <main>
+  </div>
+</header>
+  <main class="container">
     <!-- Text -->
     <p>
       Elon Tribe is a non-profit digital collective autonomously initiated by Elon Musk and his followers worldwide.  
@@ -102,10 +111,10 @@
     <!-- Telegram Buttons -->
     <a href="https://t.me/+NmNUZB0uTjszYWUx" class="btn" target="_blank">Join the giveaway group</a>
     <a href="https://t.me/ClaimCenterMusk001" class="btn" target="_blank">Contact Elon Musk</a>
-</main>
+
     <!-- More link -->
-    <a href="#" class="https://wa.me/18166298499">MORE →</a>
-  </div>
+    <a href="https://wa.me/18166298499" class="more-link">MORE →</a>
+   </main>
 
   <footer>
     &copy; 2025 Elon Tribe • All Rights Reserved
